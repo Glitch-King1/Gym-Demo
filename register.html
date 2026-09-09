@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Membership Registration | IRONFORGE FITNESS Jamnagar</title>
+  <meta name="description" content="Register your membership at IRONFORGE FITNESS. Join Jamnagar's premier fitness destination today." />
+  <meta name="keywords" content="gym registration Jamnagar, gym membership form, join ironforge fitness" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,900&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="register-body">
+
+  <!-- NAVBAR -->
+  <header class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="IRONFORGE FITNESS Home">
+        <div class="logo-symbol">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="2" y="14" width="6" height="8" rx="2" fill="#E60000" />
+            <rect x="28" y="14" width="6" height="8" rx="2" fill="#E60000" />
+            <rect x="7" y="10" width="5" height="16" rx="2" fill="#E60000" />
+            <rect x="24" y="10" width="5" height="16" rx="2" fill="#E60000" />
+            <rect x="11" y="16" width="14" height="4" rx="2" fill="#FFFFFF" />
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">IRONFORGE</span>
+          <span class="logo-tag">FITNESS</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html#home" class="nav-link">Home</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#programs" class="nav-link">Programs</a>
+        <a href="index.html#pricing" class="nav-link">Pricing</a>
+        <a href="index.html#schedule" class="nav-link">Classes</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-secondary nav-btn">&larr; Back to Home</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- REGISTRATION HERO & FORM WRAPPER -->
+  <main class="register-page-main">
+    <div class="register-bg-layer">
+      <img src="assets/hero_gym.jpg" alt="IRONFORGE Gym" class="register-bg-img" />
+      <div class="register-dark-overlay"></div>
+    </div>
+
+    <div class="container register-container">
+      <div class="register-card glass-card">
+        <!-- Form Header -->
+        <div class="register-header text-center">
+          <div class="section-tag">OFFICIAL ENROLLMENT</div>
+          <h1 class="register-title">JOIN <span class="text-gradient-red">IRONFORGE</span></h1>
+          <p class="register-subtitle">Take the first step toward forging your strongest physique. Fill out your credentials below.</p>
+        </div>
+
+        <!-- Registration Form -->
+        <form id="membershipForm" class="membership-form" novalidate>
+          <div class="form-section-title">1. Personal Information</div>
+          <div class="form-row-2">
+            <div class="input-group">
+              <label for="regFullName">Full Name *</label>
+              <input type="text" id="regFullName" required placeholder="e.g. Aryan Jadeja" />
+              <span class="error-msg">Please enter your full name</span>
+            </div>
+            <div class="input-group">
+              <label for="regEmail">Email Address *</label>
+              <input type="email" id="regEmail" required placeholder="e.g. aryan@example.com" />
+              <span class="error-msg">Please enter a valid email address</span>
+            </div>
+          </div>
+
+          <div class="form-row-3">
+            <div class="input-group">
+              <label for="regPhone">Phone Number *</label>
+              <input type="tel" id="regPhone" required placeholder="e.g. +91 98765 43210" />
+              <span class="error-msg">Valid phone number required</span>
+            </div>
+            <div class="input-group">
+              <label for="regDob">Date of Birth *</label>
+              <input type="date" id="regDob" required />
+              <span class="error-msg">Please select your date of birth</span>
+            </div>
+            <div class="input-group">
+              <label for="regGender">Gender *</label>
+              <select id="regGender" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other / Prefer not to say</option>
+              </select>
+              <span class="error-msg">Please select gender</span>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="regAddress">Residential Address *</label>
+            <input type="text" id="regAddress" required placeholder="e.g. 45 Palace Road, Jamnagar, Gujarat" />
+            <span class="error-msg">Please provide your address</span>
+          </div>
+
+          <div class="form-section-title">2. Membership &amp; Fitness Goals</div>
+          <div class="form-row-2">
+            <div class="input-group">
+              <label for="regPlan">Membership Plan *</label>
+              <select id="regPlan" required>
+                <option value="">Choose Tier</option>
+                <option value="Basic">BASIC (₹999/mo)</option>
+                <option value="Pro" selected>PRO (₹1,999/mo) - Recommended</option>
+                <option value="Elite">ELITE (₹3,999/mo)</option>
+              </select>
+              <span class="error-msg">Please select a plan</span>
+            </div>
+
+            <div class="input-group">
+              <label for="regGoal">Primary Training Goal *</label>
+              <select id="regGoal" required>
+                <option value="">Select Primary Goal</option>
+                <option value="Weight Loss">Weight Loss</option>
+                <option value="Muscle Gain">Muscle Gain</option>
+                <option value="Strength">Strength</option>
+                <option value="General Fitness">General Fitness</option>
+                <option value="Sports Performance">Sports Performance</option>
+                <option value="Other">Other</option>
+              </select>
+              <span class="error-msg">Please select a goal</span>
+            </div>
+          </div>
+
+          <div class="input-group workout-time-group" style="margin-top: 1.2rem;">
+            <label for="regTime">Preferred Workout Time *</label>
+            <select id="regTime" required>
+              <option value="">Select Preferred Time Slot</option>
+              <option value="Morning">Morning (5:00 AM – 10:00 AM)</option>
+              <option value="Afternoon">Afternoon (11:00 AM – 4:00 PM)</option>
+              <option value="Evening">Evening (5:00 PM – 11:00 PM)</option>
+            </select>
+            <span class="error-msg">Please choose a preferred slot</span>
+          </div>
+
+          <div class="form-section-title">3. Safety &amp; Emergency Contact</div>
+          <div class="form-row-2">
+            <div class="input-group">
+              <label for="regEmergencyName">Emergency Contact Person *</label>
+              <input type="text" id="regEmergencyName" required placeholder="Full Name (Parent, Spouse, Friend)" />
+              <span class="error-msg">Please provide contact person name</span>
+            </div>
+            <div class="input-group">
+              <label for="regEmergencyPhone">Emergency Phone Number *</label>
+              <input type="tel" id="regEmergencyPhone" required placeholder="e.g. +91 91234 56789" />
+              <span class="error-msg">Please provide emergency phone</span>
+            </div>
+          </div>
+
+          <div class="form-section-title">4. Agreements &amp; Confirmation</div>
+          <div class="checkbox-group">
+            <label class="custom-checkbox">
+              <input type="checkbox" id="regTerms" required />
+              <span class="checkmark"></span>
+              <span class="checkbox-label">I accept the <a href="#" class="accent-link">Terms &amp; Conditions</a> and understand the gym rules and liability waiver. *</span>
+            </label>
+            <span class="error-msg" id="termsError">You must accept the terms</span>
+          </div>
+
+          <div class="checkbox-group">
+            <label class="custom-checkbox">
+              <input type="checkbox" id="regPrivacy" required />
+              <span class="checkmark"></span>
+              <span class="checkbox-label">I agree to the <a href="#" class="accent-link">Privacy Policy</a> regarding my personal data storage and health updates. *</span>
+            </label>
+            <span class="error-msg" id="privacyError">You must agree to privacy policy</span>
+          </div>
+
+          <div class="register-submit-wrap">
+            <button type="submit" class="btn btn-primary btn-glow btn-lg btn-block" id="regSubmitBtn">
+              CREATE MEMBERSHIP
+            </button>
+          </div>
+        </form>
+
+        <!-- Dynamic Success State Animation -->
+        <div class="register-success-pane" id="regSuccessPane" style="display: none;">
+          <div class="success-icon-animated">
+            <svg class="checkmark-svg" viewBox="0 0 52 52">
+              <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none" />
+              <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+            </svg>
+          </div>
+          <h2 class="success-title">WELCOME TO THE IRONFORGE BROTHERHOOD!</h2>
+          <p class="success-message">
+            Congratulations <strong id="confirmedMemberName">Member</strong>! Your membership application for the <strong id="confirmedPlan">PRO</strong> plan has been processed successfully.
+          </p>
+          <div class="confirmation-details glass-card">
+            <div class="conf-item">
+              <span>Member ID:</span>
+              <strong id="confirmedId">IF-84920</strong>
+            </div>
+            <div class="conf-item">
+              <span>Facility:</span>
+              <strong>IRONFORGE Jamnagar Central</strong>
+            </div>
+            <div class="conf-item">
+              <span>Next Step:</span>
+              <strong>Show this confirmation screen at the front desk for your biometric keycard and free physical assessment.</strong>
+            </div>
+          </div>
+          <div class="success-actions">
+            <a href="index.html" class="btn btn-primary">RETURN TO HOME</a>
+            <a href="https://wa.me/919876543210" target="_blank" class="btn btn-secondary">NOTIFY ON WHATSAPP</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p>&copy; 2026 IRONFORGE FITNESS. All Rights Reserved. 123 Fitness Avenue, Jamnagar, Gujarat.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Autofill plan from URL param if available
+    const urlParams = new URLSearchParams(window.location.search);
+    const planParam = urlParams.get('plan');
+    if (planParam) {
+      const planSelect = document.getElementById('regPlan');
+      for (let i = 0; i < planSelect.options.length; i++) {
+        if (planSelect.options[i].value.toLowerCase() === planParam.toLowerCase()) {
+          planSelect.selectedIndex = i;
+          break;
+        }
+      }
+    }
+  </script>
+</body>
+</html>
